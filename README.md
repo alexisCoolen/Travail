@@ -87,4 +87,24 @@ def bac(prenom, nom, moyenne):
     prenom = 'Alice'
     nom = 'Dupont'
     moyenne = '12'
-    resultat = 'prenom,''nom,''a obtenu son baccalaur39at, F39licitations!'
+    if moyenne < 10:
+       "Vous n'avez pas obtenu votre baccaulaur39at"
+       else:
+           "Vous avez obtenu votre baccaulaur39at, F39licitations!"
+
+def bac2(prenom, nom, moyenne):
+    '''
+    Description : Donnes les résultats et si oui ou non, la personne en question est accepté
+    parametre : prenom (float) prenom de la personne
+    parametre : nom (float) nom de la personne
+    parametre : moyenne (float) la moyenne de la personne
+    parametre : resultat (float) phrase pour dire si oui ou non, la personne a son bac
+    '''
+    prenom = 'Bob'
+    nom = 'Martin'
+    moyenne = '9'
+    if moyenne < 10:
+       "Vous n'avez pas obtenu votre baccaulaur39at"
+       else:
+           "Vous avez obtenu votre baccaulaur39at"
+           
