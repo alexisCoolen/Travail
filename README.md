@@ -105,7 +105,12 @@ def bac2():
     nom = 'Martin'
     moyenne = '9'
     if moyenne < 10:
-       "Vous n'avez pas obtenu votre baccaulaur39at"
+       print("Vous n'avez pas obtenu votre baccaulaur39at")
        else:
-           "Vous avez obtenu votre baccaulaur39at"
+           print("Vous avez obtenu votre baccaulaur39at")
 bac2('Bob','Martin',9)           
+
+CORRECTION :
+def bac(prenom, nom, moyenne_bac)
+if moyenne_bac >= 10:
+   print(prénom, nom, "a obtenu son bac, félicitations!")
