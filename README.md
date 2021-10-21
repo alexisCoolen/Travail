@@ -76,7 +76,7 @@ age_individu > 18
 
 moyenne_bac = 16
 moyenne_bac >= 12
-def bac(prenom, nom, moyenne):
+def bac():
     '''
     Description : Donnes les résultats et si oui ou non, la personne en question est accepté
     parametre : prenom (float) prenom de la personne
@@ -92,7 +92,7 @@ def bac(prenom, nom, moyenne):
        else:
            "Vous avez obtenu votre baccaulaur39at, F39licitations!"
 
-def bac2(prenom, nom, moyenne):
+def bac2():
     '''
     Description : Donnes les résultats et si oui ou non, la personne en question est accepté
     parametre : prenom (float) prenom de la personne
