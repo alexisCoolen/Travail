@@ -112,5 +112,5 @@ bac2('Bob','Martin',9)
 
 CORRECTION :
 def bac(prenom, nom, moyenne_bac)
-if moyenne_bac >= 10:
+if moyenne_bac >= 10 :
    print(prénom, nom, "a obtenu son bac, félicitations!")
