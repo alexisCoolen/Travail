@@ -91,6 +91,7 @@ def bac():
        "Vous n'avez pas obtenu votre baccaulaur39at"
        else:
            "Vous avez obtenu votre baccaulaur39at, F39licitations!"
+bac('Alice','Dupont',12)
 
 def bac2():
     '''
@@ -107,4 +108,4 @@ def bac2():
        "Vous n'avez pas obtenu votre baccaulaur39at"
        else:
            "Vous avez obtenu votre baccaulaur39at"
-           
+bac2('Bob','Martin',9)           
