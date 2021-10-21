@@ -76,3 +76,15 @@ age_individu > 18
 
 moyenne_bac = 16
 moyenne_bac >= 12
+def bac(prenom, nom, moyenne):
+    '''
+    Description : Donnes les résultats et si oui ou non, la personne en question est accepté
+    parametre : prenom (float) prenom de la personne
+    parametre : nom (float) nom de la personne
+    parametre : moyenne (float) la moyenne de la personne
+    parametre : resultat (float) phrase pour dire si oui ou non, la personne a son bac
+    '''
+    prenom = 'Alice'
+    nom = 'Dupont'
+    moyenne = '12'
+    resultat = 'prenom,''nom,''a obtenu son baccalaur39at, F39licitations!'
