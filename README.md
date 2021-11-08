@@ -87,7 +87,7 @@ def bac():
     prenom = 'Alice'
     nom = 'Dupont'
     moyenne = '12'
-    if moyenne < 10:
+    if moyenne =< 10:
        "Vous n'avez pas obtenu votre baccaulaur39at"
        else:
            "Vous avez obtenu votre baccaulaur39at, F39licitations!"
@@ -114,3 +114,36 @@ CORRECTION :
 def bac(prenom, nom, moyenne_bac)
 if moyenne_bac >= 10 :
    print(prénom, nom, "a obtenu son bac, félicitations!")
+
+#Exercice 3
+def maximum ():
+    '''
+    Description : Démontre que a > b
+    paramètre : a (float) nombre n inconnu
+    paramètre : b (float) autre nombre n inconnu
+    paramètre : > (float) définit quel nombre n est supérieur
+    '''
+    A = '5'
+    B = '2'
+    maximum = 'A >= B'
+    if maximum (A >= B):
+        print('A est supérieur a B')
+        else:
+            print('B est supérieur a A')
+
+
+#Exercice 4
+def inférieur ():
+    '''
+    Description : Démontre que a < b
+    paramètre : a (float) nombre n inconnu
+    paramètre : b (float) autre nombre n inconnu
+    paramètre : < (float) définit quel nombre n est inférieur
+    '''
+    A = '2'
+    B = '5'
+    maximum = 'A =< B'
+    if maximum (A =< B):
+        print('A est inférieur a B')
+        else:
+            print('B est inférieur a A')
