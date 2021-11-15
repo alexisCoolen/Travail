@@ -130,5 +130,50 @@ if a <= b
 def valeur_absolue(x):
 if x >= 0:
    return x
-   else
+   else:  
    return -1*x
+
+def bowling(boule1, boule2):
+    """
+    Description de la fonction : Affiche a l'écran les performances d'un joueur de bowling
+    boule1 (int) : nombre de quilles renversées avec la première boule
+    boule2 (int) : nombre de quilles renversées ave la deuxième boule
+    préconditions sur les entrées : boule1 + boule2 <= 10
+    """
+if boule1 == 10:
+    print ("X")
+elif boule1 + boule2 == 10:
+    print ("/")
+    else:
+       print(boule1 + boule2)
+
+def fonction1 (a,b,c):
+    """
+    Description : Nous prove que a est inférieur ou égal a b qui est inférieur ou égal a c
+    Vrai / True (float) : Affirme la fonction
+    Faux / False (float) : N'affirme pas la fonction
+    """
+    a = '2'
+    b = '69'
+    c = '420'
+    if a <= b <= c:
+        return ("True")
+    else:
+        return ("False")
+def croissant(a,b,c):
+    if a <= b :
+        if b <= c :
+            print ("True")
+        else :
+            print ("False")
+
+def est bissextile(année):
+    if année != (=0):
+    return FAlse
+    
+    else:
+        if annee % 100 == 0:
+          if annee % 400 == 0:
+            return True
+        else:
+            return False
