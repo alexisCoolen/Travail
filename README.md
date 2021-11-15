@@ -115,3 +115,20 @@ def bac(prenom, nom, moyenne_bac)
 if moyenne_bac >= 10 :
    print(prénom, nom, "a obtenu son bac, félicitations!")
 
+def maximum (a,b):
+if a >= b:
+   return a
+   else:
+   return b
+
+def minimum (a,b):
+if a <= b 
+   return a
+   else:
+   return b
+
+def valeur_absolue(x):
+if x >= 0:
+   return x
+   else
+   return -1*x
