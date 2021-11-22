@@ -191,3 +191,18 @@ elif triangle == c2:
     print(isocèle)
 else:
     print(scalène)
+
+for i in range (2,9):
+    print (i)
+
+for j in range (0,25,4):
+    print (j)
+    
+for maChaine in "informatique":
+    print ("On affiche la lettre", maChaine)
+    
+for conseil in range(len(conseil)) :
+    if conseil == message:
+       print('Pour progresser en programmation, la pratique est le plus important')
+
+conseil = 
