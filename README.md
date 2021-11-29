@@ -200,9 +200,3 @@ for j in range (0,25,4):
     
 for maChaine in "informatique":
     print ("On affiche la lettre", maChaine)
-    
-for conseil in range(len(conseil)) :
-    if conseil == message:
-       print('Pour progresser en programmation, la pratique est le plus important')
-
-conseil = 
