@@ -200,3 +200,22 @@ for j in range (0,25,4):
     
 for maChaine in "informatique":
     print ("On affiche la lettre", maChaine)
+
+for i in range (10):
+    print("Pour progresser en programmation, la pratique est le plus important")
+
+for i in range (1,11):
+    k=7*i
+    print(k)
+    
+for i in range (1,11):
+    k=7*i
+    print(7,i,"=",k)
+    
+for tableMultiplication in range (1,11):
+    k=9*tableMultiplication
+    print(9,"*",tableMultiplication,"=",k)
+    
+for plusieursTablesMultiplication in range (1,11):
+    k=3*plusieursTablesMultiplication
+    print(3,"*",plusieursTablesMultiplication,"=",k)
