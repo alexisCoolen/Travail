@@ -219,3 +219,35 @@ for tableMultiplication in range (1,11):
 for plusieursTablesMultiplication in range (1,11):
     k=3*plusieursTablesMultiplication
     print(3,"*",plusieursTablesMultiplication,"=",k)
+
+#Exercice 4
+def nombreCaracteres(chaine):
+    compteur = 0
+    for lettre in chaine:
+            compteur = compteur+1
+    return compteur
+
+#Exercice 5
+def compterOccurence(chaine,c):
+    compteur = 0
+    for caractere in chaine:
+        if caractere == c:
+            compteur +=1
+    return compteur
+   
+#Exercice 6
+On passe dans la boucle for 2 fois, et 0 fois dans la seconde fonction
+Nous n'avons pas le meme résultat car dans Stallmann, nous avons deux a existant, et dans Richard, aucun B est présent (a cause du if du code si c'est une lettre "c" dans la fonction est présente)
+
+def rechercheIndice(chaine, c):
+    """
+    Description de la fonction : renvoie l'indice de la première occurence du caractère c dans chaine
+    chaine (str) : chaine de caractère dans laquelle la recherche s'effectue
+    c (str) : caractère recherché
+    return (int ou None) : indice du caractère c danc chaine (None si le caractère c n'apparaît pas dans chaine)
+    """
+    compteur = 0
+    for lettre in chaine:
+        if lettre == c:
+            compteur +=1
+    return compteur
