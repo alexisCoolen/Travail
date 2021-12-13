@@ -73,3 +73,42 @@ def ligne2carre(nb,cote,espacement):
     espacement(int) : espacement entre 2 carrés successifs
     return : None
     """
+
+for i in range(nb):
+        carre(cote)
+        turtle.up()
+        turtle.forward(espacement+cote)
+        turtle.down()
+        
+#Exercice 7
+
+def damier(longueur,hauteur,cote,espacement):
+    """
+    Description de la fonction : Déplace la tortue de sorte qu'elle dessine un damier
+    longueur(int) : nombre de carrés par ligne
+    hauteur(int) : nombre de carrés par colonne
+    cote(int): côté du carré
+    espacement(int) : espacement entre 2 carrés successifs
+    return : None
+    """
+    turtle.up()
+    turtle.goto(-espacement,-espacement)
+    turtle.down()
+    turtle.forward(longueur*(cote+espacement)+espacement)
+    turtle.left(90)
+    turtle.forward(hauteur*(cote+espacement)+espacement)
+    turtle.left(90)
+    turtle.forward(longueur*(cote+espacement)+espacement)
+    turtle.left(90)
+    turtle.forward(hauteur*(cote+espacement)+espacement)
+    turtle.left(90)
+    turtle.up()
+    turtle.goto(0,0)
+    turtle.down()
+    y = 0
+    for i in range(hauteur):
+        ligne2carre(longueur, cote, espacement)
+        y=y+cote+espacement
+        turtle.up()
+        turtle.goto(0,y)
+        turtle.down()
