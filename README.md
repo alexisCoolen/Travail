@@ -184,7 +184,35 @@ def triangle(c1,c2,c3):
     c1, c2, c3 (int ou float) : trois côtés du triangle
     précondition sur les entrées : on considère que les valeurs de c1, c2 et c3 doivent permettre de construire un triangle
     return (None)
-    """
+    """#Exercice 1
+
+liste_alexis = [4,7,3,4,6,9,13,2]
+
+#Exercice 2
+liste_de_prenom = ['Alice', 'Bob', 'Tom']
+liste_de_prenom.insert(2, 'Marc')
+
+#Exercice 3
+t = [0,4,16,36,64]
+for i in range(0):
+    t.append(i**2)
+
+#Exercice 4
+t = [0]*10
+
+for i in range(len(t)):
+    t[i] = 10 - i
+
+#Exercice 5
+    
+def longueurNomV1(liste_nom):
+    liste_longueur=[]
+    for nom in liste_nom:
+        long=len(nom)
+        liste_longueur.append(long)
+        
+    print(liste_longueur)
+    
 if triangle == c1:
     print(équilatéral)
 elif triangle == c2:
