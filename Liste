@@ -1,0 +1,24 @@
+t = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+def afficheListe(nomdelaliste):
+    for i in nomdelaliste:
+        print (i, end=' ')
+        
+jesuiskevin = ['Artichaut', 'Tractopelle', 'Ovale', 'Poutre']
+
+#Exercice 7
+liste_entier = [23, 45, 23, 43, 7, 66, 21, 45, 23, 7, 200, 200]
+def enleveDoublon(liste_entier):
+    for i in liste_entier:
+        liste_de_chiffres = list(set(liste_entier))
+        liste_de_chiffres.sort()
+    print(liste_de_chiffres)
+
+
+def est_un_chiffre(c):
+    if ord(c) < 58:
+        if ord(c) > 47:
+            return True
+    return False
+
+def chiffre(a):
+    return ord(o) <= 57 and and (a) >= 46
