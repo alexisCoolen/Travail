@@ -1,3 +1,5 @@
+Exercice 1
+
 n = 100
 k = 0
 #le test n'est pas défini
@@ -20,3 +22,47 @@ test = 2**n < n
 while test :
     test = 2**k < n
 print(k) #on a une boucle infini vu que print est mal placé
+
+Exercice 2
+
+N = 0
+while N < 10:
+    print(N)
+    N = N + 2
+
+La fonction affiche :
+0
+2
+4
+6
+8
+
+
+K = 61
+while K < 100:
+    print(K)
+    K = K + 2
+
+La fonction affiche :
+61
+63
+65
+67
+69
+71
+73
+75
+77
+79
+81
+83
+85
+87
+89
+91
+93
+95
+97
+99
+
+Exercice 3
