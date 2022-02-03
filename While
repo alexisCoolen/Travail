@@ -1,1 +1,22 @@
+n = 100
+k = 0
+#le test n'est pas défini
+while test: #Il manque le ":"
+    test = 2**k < n
+    k = k + 1
+print(k)
 
+n = 100
+k = 0
+test = 2**n < n
+while test:
+    test = 2**k > n
+    k = k + 1 #Cette ligne est de trop
+print(k)
+
+n = 100
+k = 0
+test = 2**n < n
+while test :
+    test = 2**k < n
+print(k) #on a une boucle infini vu que print est mal placé
