@@ -115,3 +115,16 @@ def somme2(n1, n2):
 
 Exercice 5 
 
+def nombre_alenvers(nombre):
+    nombre_inverser=[]
+    for i in nombre:
+        nombre_inverser.append(i)
+    nombre_inverser.reverse()
+    print(nombre_inverser)
+print(nombre_alenvers("1234"))
+def est_palindrome(nombre):
+    for i in range(len(nombre)//2):
+        if nombre[i] != nombre[-i-1]:
+            return False
+    return True
+print(est_palindrome('121'))
