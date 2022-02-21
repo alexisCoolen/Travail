@@ -66,3 +66,33 @@ La fonction affiche :
 99
 
 Exercice 3
+
+def decroissant_for(n):
+    for i in range(n, 0, -1):
+        print(i)
+
+def decroissant_while(n):
+    k=n
+    while k!=0:
+        print(k,end=" ")
+        k=k-1
+
+Exercice 4
+
+def somme1(n1, n2):
+    S = 0
+    k = n1
+    while k < n2:
+        S = S + k
+        k = k + 1
+    return(S)
+S = 10
+
+def somme2(n1, n2):
+    S = 0
+    k = n1
+    while k < n2:
+        k = k + 1
+        S = S + k
+    return(S)
+S = 14
