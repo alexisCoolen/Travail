@@ -96,3 +96,22 @@ def somme2(n1, n2):
         S = S + k
     return(S)
 S = 14
+
+def somme1(n1, n2):
+    S = 0
+    k = n1
+    for i in range(n2):
+        S = S + k
+        k = k + 1
+    return(S)
+
+def somme2(n1, n2):
+    S = 0
+    k = n1
+    for i in range(n2):
+        k = k + 1
+        S = S + k
+    return(S)
+
+Exercice 5 
+
