@@ -1,1 +1,14 @@
+Exercice 1 :
+
+t = (3, 7, 2, 2, 10)
+
+t[3] = 2
+del(t[1]) = error
+t(2) = 2 si c'était pas des parenthèses
+(1,) + t[4] = Error, sans la virgule => 11
+3,4 + 5,5 = 3, 9, 5
+t[-3] = 2
+t[1:3] = 7, 2
+
+Exercice 2 :
 
