@@ -11,5 +11,18 @@ t[-3] = 2
 t[1:3] = 7, 2
 
 Exercice 2 :
+
 def quatreOperations(a, b):
   return (a+b,a-b,a*b,a/b)
+
+Exercice 3 : 
+def prefixe (e, t):
+    return (e,) + t
+
+def suffixe (e, t):
+    return t + (e,)
+
+def insere (e, i, t):
+    return (e,) + (i,) + t
+    
+Exercice 4 :
