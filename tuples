@@ -26,3 +26,10 @@ def insere (e, i, t):
     return (e,) + (i,) + t
     
 Exercice 4 :
+def supprime(k, t):
+    tn = ()
+    for i in range(k):
+        tn = tn + (t[i],)
+    for i in range(k+1,len(t)):
+        tn = tn +(t[i],)
+    return tn
