@@ -1,2 +1,41 @@
+def nbre_lignes_fichier(nom_fichier):
+    '''
+    Description : renvoie le nombre de lignes dans un fichier
+    nom_fichier (str): nom de fichier
+    return (int) : Nombre de lignes dans le fichier.
+    '''
+    n = 0
+    with open(nom_fichier) as fich:
+        while fich.readline():
+            n = n + 1
+    return n
 
-https://youtu.be/qGk4E9ss95s
+def choisir_mot(nom_fichier):
+    '''
+    Description : renvoie un mot tiré au hasard dans le fichier
+    nom_fichier (str): nom de fichier contenant un mot par ligne
+    return mot (str) : mot du fichier.
+    '''
+    nbre_mots = nbre_lignes_fichier(nom_fichier)
+    numero_ligne = randint(1,nbre_mots)
+    with open(nom_fichier) as f:
+        for k in range(numero_ligne-1):
+            f.readline()
+        mot = f.readline()
+        mot = mot[0:len(mot)-1]
+    return mot
+
+def enleve_accent(mot):
+    '''
+    Description : mettre le mot en miniscules sans accent et
+        retourne la liste des lettres le composant
+    mot (str): nom de fichier contenant un mot par ligne
+    return  lst_lettres (list) : liste des lettres composant mot.
+    '''
+    accent = [é, à, è, ù, â, ê, î, ô, û]
+    sans_accent = [e, a, e, u, a, e, i, o, u]
+    k = 0
+    while k < len(accent):
+        mot = mot.replace(accent[k], sans_accent[k])
+        i += 1
+    return mot
