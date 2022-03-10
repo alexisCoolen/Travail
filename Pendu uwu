@@ -24,6 +24,17 @@ def choisir_mot(nom_fichier):
         mot = f.readline()
         mot = mot[0:len(mot)-1]
     return mot
+    
+def caract_ss_accent(caractere):
+    lst_accent = ['é', 'è', 'ê', 'à', 'â', 'ù', 'û', 'î', 'ô','ç']
+    sans_accent = ['e', 'e', 'e', 'a', 'a', 'u', 'u', 'i', 'o', 'c']
+    carac = caractere
+    k = 0
+    while k < len(lst_accent):
+        if caractere == lst_accent[k]:
+            carac = sans_accent[k]
+        k = k+1
+    return carac
 
 def enleve_accent(mot):
     '''
@@ -32,21 +43,20 @@ def enleve_accent(mot):
     mot (str): nom de fichier contenant un mot par ligne
     return  lst_lettres (list) : liste des lettres composant mot.
     '''
-    lst_accent=['é', 'è', 'ê', 'à', 'â', 'ù', 'û', 'î', 'ô','ç']
-    sans_accent = ['e', 'e', 'e', 'a', 'a', 'u', 'u', 'i', 'o', 'c']
     k = 0
-    while k < len(mot):
-        c=mot[k]
-        if c in lst_accent:
-            mot = liste_de_mot[lycée, adoré, théâtre, chambre]    
-        k+= 1
-    return mot
-    
-    
-    
-    
-        for k in tablo:
-        if i in k: i = tablo[k]; break
-    mot_sans_accents += i
+    liste_de_mot = []
+    for k in range(len(mot)):
+        c = caract_ss_accent(mot[k])
+        liste_de_mot.append(c)
+    return liste_de_mot
 
-print(mot_sans_accents)
+def cree_lst_tirets(lst_lettres):
+    '''
+    Description : créé liste de tirets avec autant de caractères 
+    lst_lettres (list): liste des lettres
+    return  lst_tirets (list) : liste des tirets composant le mot recherché..
+    '''
+    liste_de_mot = []
+    for k in len(liste_de_mot):
+        liste_de_mot.append(_)
+    return liste_de_mot
