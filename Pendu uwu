@@ -32,10 +32,12 @@ def enleve_accent(mot):
     mot (str): nom de fichier contenant un mot par ligne
     return  lst_lettres (list) : liste des lettres composant mot.
     '''
-    accent = [é, à, è, ù, â, ê, î, ô, û]
-    sans_accent = [e, a, e, u, a, e, i, o, u]
+    lst_accent=['é', 'è', 'ê', 'à', 'â', 'ù', 'û', 'î', 'ô','ç']
+    sans_accent = ['e', 'e', 'e', 'a', 'a', 'u', 'u', 'i', 'o', 'c']
     k = 0
-    while k < len(accent):
-        mot = mot.replace(accent[k], sans_accent[k])
-        i += 1
+    while k < len(mot):
+        c=mot[k]
+        if c in lst_accent:
+            mot = liste_de_mot[lycée, adoré, théâtre, chambre]    
+        k+= 1
     return mot
