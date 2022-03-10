@@ -41,3 +41,12 @@ def enleve_accent(mot):
             mot = liste_de_mot[lycée, adoré, théâtre, chambre]    
         k+= 1
     return mot
+    
+    
+    
+    
+        for k in tablo:
+        if i in k: i = tablo[k]; break
+    mot_sans_accents += i
+
+print(mot_sans_accents)
