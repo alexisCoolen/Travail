@@ -56,7 +56,7 @@ def cree_lst_tirets(lst_lettres):
     lst_lettres (list): liste des lettres
     return  lst_tirets (list) : liste des tirets composant le mot recherché..
     '''
-    liste_de_mot = []
-    for k in len(liste_de_mot):
-        liste_de_mot.append(_)
-    return liste_de_mot
+    lst_tirets = []
+    for k in range(len(lst_lettres)):
+        lst_tirets.append("_")
+    return lst_tirets
