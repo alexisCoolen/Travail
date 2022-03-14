@@ -60,3 +60,17 @@ def cree_lst_tirets(lst_lettres):
     for k in range(len(lst_lettres)):
         lst_tirets.append("_")
     return lst_tirets
+    
+    def propose_lettre(lettres_deja_choisis):
+    '''
+    Description : interface avec l'utilisateur pour choisir une lettre
+        On vérifie si la lettre était dans l'ensemble des lettres déja choisies
+    lettres_deja_choisis (set): ensemble des lettres déja choisies
+    return lettre (str) : la lettre choisie par l'utilisateur
+    '''
+    k = 0
+    lettre = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    if k == lettre:
+        return lettre
+    while k == lettres_deja_choisis:
+        print("La lettre est déja choisi")
