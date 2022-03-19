@@ -73,3 +73,25 @@ def cree_lst_tirets(lst_lettres):
             print("La liste des lettres est ", lettres_deja_choisis)
         lettre_propose = input ('Proposez une autre lettre ')
     return lettre_propose
+
+def pendu(fichier):
+    '''
+    Description : fonction principale du jeu de pendu
+    lst_secrete (list): liste des lettres composant le mot recherché
+    lettres_deja_choisis (set): ensemble des lettres déjà choisies
+    chaine_tirets (list): liste à tirets avec des lettres
+    return  (bool) : Vrai si la lettre est trouvée
+    '''
+    chaine_tirets = []
+    for k in range(len(lst_secrete)):
+        chaine_tirets.append("_")
+    return chaine_tirets
+    
+    lettre_propose = input ('Proposez une lettre ')
+        while lettre_propose in lettres_deja_choisis:
+            print("La liste des lettres est ", lettres_deja_choisis)
+        lettre_propose = input ('Proposez une autre lettre ')
+    return lettre_propose
+    
+    for i in range(len(lst_secrete)):
+        if i == lst_secrete
