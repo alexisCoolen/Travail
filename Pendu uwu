@@ -86,12 +86,8 @@ def pendu(fichier):
     for k in range(len(lst_secrete)):
         chaine_tirets.append("_")
     return chaine_tirets
+    for i in range(len(lst_secrete):
+        if lettre_deja_choisis in lst_secrete[k]:
+            return True
+            print ("Ensemble des lettres choisis :", lettres_deja_choisis)
     
-    lettre_propose = input ('Proposez une lettre ')
-        while lettre_propose in lettres_deja_choisis:
-            print("La liste des lettres est ", lettres_deja_choisis)
-        lettre_propose = input ('Proposez une autre lettre ')
-    return lettre_propose
-    
-    for i in range(len(lst_secrete)):
-        if i == lst_secrete
