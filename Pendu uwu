@@ -73,6 +73,32 @@ def cree_lst_tirets(lst_lettres):
             print("La liste des lettres est ", lettres_deja_choisis)
         lettre_propose = input ('Proposez une autre lettre ')
     return lettre_propose
+    
+def remplace_tiret(lettre, lst_secrete, chaine_tirets):
+    '''
+    Description : met au bons emplacements la lettre dans la liste
+    lettre (str) : lettre de la soltion 
+    lst_secrete (list): liste des lettres composant le mot recherché
+    chaine_tirets (list): liste à tirets avec des lettres
+    return  (none) : 
+    '''
+    
+    for k in range(len(lst_secrete)):
+        if lettre == lst_secrete[k]:
+            chaine_tirets[k] = lettre
+
+
+def tiret_remplace(lst_secrete, lettres_deja_choisis, chaine_tirets):
+    '''
+    Description : met au bons emplacements la lettre dans la liste
+    lst_secrete (list): liste des lettres composant le mot recherché
+    lettres_deja_choisis (set): ensemble des lettres déjà choisies
+    chaine_tirets (list): liste à tirets avec des lettres
+    return  (bool) : Vrai si la lettre est trouvée
+    '''
+    for k in range(len(lst_secrete)):
+        if lettre_deja_choisis == lst_secrete[k]:
+            chaine_tirets[k] = lettre_deja_choisis
 
 def pendu(fichier):
     '''
