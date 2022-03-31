@@ -1,1 +1,29 @@
+Exercice 1)
+a. 3.4 * 10 x 38
+b. 3.4 * 10 x 38 / 2
 
+Exercice 2)
+a. 255.2555.0.0
+b. 172.16.1.21
+c. 1
+
+2)
+a. 24
+b. 192.168.1.23
+c. 1
+
+Exercice 3)
+Adresse de sous-réseau : 200.67.80.45
+Adresse de diffusion : 255.0.0.0
+CIDR : 200.67.80.45/8
+80
+
+2. 
+SOus-réseau : 255.255.200.0
+200
+192.168.207.5
+Non
+Oui
+192.168.196.5/18
+
+Exercice 4)
