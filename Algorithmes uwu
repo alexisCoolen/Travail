@@ -1,1 +1,26 @@
+def recherche(liste, valeur):
+    """
+    Description de la fonction : Détermine si la valeur est présente dans la liste
+    paramètre liste (list)
+    paramètre valeur (type quelconque)
+    Return (bool)
+    """
+    for element in liste:
+        if element == valeur:
+            return True
+    return False
+
+def recherche_indice(liste, valeur):
+    """
+    Description de la fonction : Renvoie l'indice de la valeur recherchée (None si valeur non présente)
+    paramètre liste (list) : liste non vide
+    paramètre valeur (type quelconque)
+    Return (int ou Nonetype)
+    """
+    trouve = False
+    k = 0
+    while k < len(liste) and not trouve:
+        trouve = liste[k] == valeur
+        k = k + 1
+    return trouve
 
