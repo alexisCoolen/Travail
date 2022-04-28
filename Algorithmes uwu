@@ -24,3 +24,26 @@ def recherche_indice(liste, valeur):
         k = k + 1
     return trouve
 
+def recherche_minimum(liste):
+    """
+    Description de la fonction : Renvoie la plus petite valeur de la liste
+    paramètre liste (list) : liste non vide d'entiers(int), de nombres réels(float) ou de chaîne de caractères(str)
+    Return (int)
+    """
+    min = liste[0]
+    for element in liste:
+        if element < min:
+            min = element
+    return min
+
+def recherche_maximum(liste):
+    """
+    Description de la fonction : Renvoie la plus grande valeur de la liste
+    paramètre liste (list) : liste non vide d'entiers(int), de nombres réels(float) ou de chaîne de caractères(str)
+    Return (int)
+    """
+    max = liste[0]
+    for element in liste:
+        if element > max:
+            max = element
+    return max
