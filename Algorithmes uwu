@@ -47,3 +47,20 @@ def recherche_maximum(liste):
         if element > max:
             max = element
     return max
+
+def moyenne(liste):
+    """
+    Description de la fonction : Calcule la moyenne des valeurs contenues dans la liste
+    paramètre liste (list) : liste non vide d'entiers(int) ou de nombres réels(float)
+    Return (int)
+    """
+def moyenne(liste):
+    """
+    Description de la fonction : Calcule la moyenne des valeurs contenues dans la liste
+    paramètre liste (list) : liste non vide d'entiers(int) ou de nombres réels(float)
+    Return (int)
+    """
+    somme = 0
+    for element in range(len(liste)):
+        somme = somme + liste[element] // len(liste)
+    return somme
