@@ -64,3 +64,18 @@ def moyenne(liste):
     for element in range(len(liste)):
         somme = somme + liste[element] // len(liste)
     return somme
+
+def recherche_dichotomique(liste, valeur):
+    n = len(liste)
+    trouve = False
+    gauche = liste[0]
+    droite = liste[n-1]
+    while droite > gauche and pas_trouve:
+        pivot == (droite+gauche) // 2
+    if valeur > liste[pivot]:
+        droite = pivot
+    elif:
+        if valeur < liste[pivot]
+        gauche = pivot
+    else:
+        trouve = True
