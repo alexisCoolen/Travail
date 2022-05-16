@@ -1,0 +1,66 @@
+def genere_grille():
+    '''
+    Description : Fonction qui initialise la grille du jeu
+    return grille (lst) : une liste de listes représentant la grille du jeu.
+    '''
+    grille = [['0', '0', '0', '0', '0', '0', '0'],
+              ['0', '0', '0', '0', '0', '0', '0'],
+              ['0', '0', '0', '0', '0', '0', '0'],
+              ['0', '0', '0', '0', '0', '0', '0'],
+              ['0', '0', '0', '0', '0', '0', '0'],
+              ['0', '0', '0', '0', '0', '0', '0'],
+              ['0', '0', '0', '0', '0', '0', '0']]
+    return grille
+
+def numero_ligne(grille, colonne):
+    '''Description : Fonction qui renvoie la première ligne non remplie de la grille.
+    grille(lst) : la liste des listes représentant la grille du jeu
+    colonne(int) :
+    return ligne(int) : numéro de ligne à jouer
+    '''
+    for ligne in grille:
+        ligne = colonne
+    return ligne
+    
+    
+def alignement_diagonal(grille, position, joueur):
+    '''Description : Fonction qui teste si 4 pions du joueur sont alignés sur une diagonale;
+    grille(lst) :   Liste de liste représentant la grille courante du jeu;
+    position(tuple) : représente les coordonnées du pion qui vient d'être joué;
+    joueur(int) : 1 si le joueur est le numéro 1, 2 si le joueur 2;
+    return alignes(bool) : vrai si joueur gagne, Faux sinon.
+    '''
+    alignes = False
+    nbre_pion = 0
+    ligne = position[0]
+    colonne = position[1]
+    if colonne > ligne:
+        # Triangulaire inférieure
+        diff = colonne-ligne
+        k = diff
+        while k < 7 and not alignes:
+            if grille[6][6]== joueur :
+                nbre_pion = 4
+                alignes = 4
+            else :
+                nbre_pion = 0
+            k = 0
+    else:
+        # Triangulaire supérieure
+        diff = ligne - colonne
+        k = diff
+        while k < 6 and not alignes:
+            if grille[5][5]== joueur :
+                nbre_pion = 4
+                alignes = 4
+            else :
+                nbre_pion = 0
+            k = 0           
+    return alignes
+
+def jeu_puissance4():
+    '''
+    Description : C est le programme principale. Il affiche  :
+      soit le joueur gagnant soit la grille est pleine.
+    '''
+    
