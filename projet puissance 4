@@ -30,32 +30,31 @@ def alignement_diagonal(grille, position, joueur):
     joueur(int) : 1 si le joueur est le numéro 1, 2 si le joueur 2;
     return alignes(bool) : vrai si joueur gagne, Faux sinon.
     '''
-    alignes = False
+alignes = False
     nbre_pion = 0
     ligne = position[0]
     colonne = position[1]
-    if colonne > ligne:
-        # Triangulaire inférieure
-        diff = colonne-ligne
-        k = diff
-        while k < 7 and not alignes:
-            if grille[6][6]== joueur :
-                nbre_pion = 4
-                alignes = 4
+    somme = ligne + colonne
+    if somme < 6:
+        # Antitriangulaire inférieur
+        k = 0
+        while k <= somme and not alignes:
+            if grille[ligne][colonne]== joueur :
+                nbre_pion = nbre_pion+1
+                alignes = True
             else :
                 nbre_pion = 0
-            k = 0
+            k = k+1
     else:
-        # Triangulaire supérieure
-        diff = ligne - colonne
-        k = diff
-        while k < 6 and not alignes:
-            if grille[5][5]== joueur :
-                nbre_pion = 4
-                alignes = 4
+        # Antitriangulaire supérieur
+        k = somme - 6
+        while k <= 5 and not alignes:
+            if grille[ligne][colonne]== joueur :
+                nbre_pion = nbre_pion+1
+                alignes = True
             else :
                 nbre_pion = 0
-            k = 0           
+            k = k+1
     return alignes
 
 def jeu_puissance4():
