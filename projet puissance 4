@@ -28,7 +28,17 @@ def numero_ligne(grille, colonne):
     for colonne in range(len(grille)):
         print(colonne-6)
     return colonne
-        
+
+def grille_pleine(grille):
+    '''Description : Fonction qui teste si la grille est pleine.
+    grille (lst) : liste de liste représentant la grille
+    return g_pleine(bool) : vrai si la grille est pleine, Faux sinon
+    '''
+    for k in grille:
+        if grille <= 0:
+            return False
+        else:
+            return True
     
     
 def alignement_diagonal(grille, position, joueur):
