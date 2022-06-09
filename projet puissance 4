@@ -3,14 +3,21 @@ def genere_grille():
     Description : Fonction qui initialise la grille du jeu
     return grille (lst) : une liste de listes représentant la grille du jeu.
     '''
-    grille = [['0', '0', '0', '0', '0', '0', '0'],
-              ['0', '0', '0', '0', '0', '0', '0'],
-              ['0', '0', '0', '0', '0', '0', '0'],
-              ['0', '0', '0', '0', '0', '0', '0'],
-              ['0', '0', '0', '0', '0', '0', '0'],
-              ['0', '0', '0', '0', '0', '0', '0'],
-              ['0', '0', '0', '0', '0', '0', '0']]
+    grille = [[7*0], [7*0], [7*0], [7*0], [7*0], [7*0]]
     return grille
+    
+def affiche_grille(grille):
+    '''Description : Fonction qui affiche la grille du jeu à l'envers.
+    case vide = 0, pion rouge = 1, pion jaune=2.
+    Les numéros de colonne de 1 à 7 doivent apparaître en dessous de la grille.
+    grille (lst) = la liste des listes représentant la grille du jeu
+    return (None)
+    '''
+    
+    for k in range(6):
+        print(grille[5-k])
+    print(' 0 1 2 3 4 5 6 ')
+    print(10*"_")
 
 def numero_ligne(grille, colonne):
     '''Description : Fonction qui renvoie la première ligne non remplie de la grille.
@@ -18,9 +25,10 @@ def numero_ligne(grille, colonne):
     colonne(int) :
     return ligne(int) : numéro de ligne à jouer
     '''
-    for ligne in grille:
-        ligne = colonne
-    return ligne
+    for colonne in range(len(grille)):
+        print(colonne-6)
+    return colonne
+        
     
     
 def alignement_diagonal(grille, position, joueur):
@@ -56,10 +64,3 @@ alignes = False
                 nbre_pion = 0
             k = k+1
     return alignes
-
-def jeu_puissance4():
-    '''
-    Description : C est le programme principale. Il affiche  :
-      soit le joueur gagnant soit la grille est pleine.
-    '''
-    
